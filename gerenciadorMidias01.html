@@ -1,0 +1,2193 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample document</title>
+    <link rel="canonical" href="./regular-html-version.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+
+    <style amp-custom>
+:root{--color-primary:#005AF0;--space-1:.5rem;--space-4:2rem}
+amp-selector[role=tablist].tabs-with-flex{display:flex;flex-wrap:wrap;outline:none}
+amp-selector[role=tablist].tabs-with-flex [role=tab]{flex-grow:1;text-align:center;padding:9px 5px}
+amp-selector[role=tablist].tabs-with-flex [role=tab][selected]{outline:none;border-bottom:2px solid #8E9AAF}
+amp-selector[role=tablist].tabs-with-flex [role=tabpanel]{display:none;width:100%;order:1;padding:31px 0 0}
+amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel]{display:block;outline:none}
+amp-selector[role=tablist].tabs-with-selector{display:flex}
+amp-selector[role=tablist].tabs-with-selector [role=tab][selected]{outline:none;border-bottom:2px solid #8E9AAF}
+amp-selector[role=tablist].tabs-with-selector{display:flex}
+amp-selector[role=tablist].tabs-with-selector [role=tab]{width:100%;text-align:center;padding:9px 5px}
+amp-selector.tabpanels [role=tabpanel]{display:none;padding:9px 5px;outline:none}
+amp-selector.tabpanels [role=tabpanel][selected]{outline:none;display:block;outline:none}
+.scrollbar{float:left;height:480px;width:99%;background:#fff;overflow-y:scroll;position:relative;z-index:1;margin:10px 0 0}
+.force-overflow{min-height:100px;line-height:1.5;font-size:12px}
+#style-3-scrollbar::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.15);background-color:#fff}
+#style-3-scrollbar::-webkit-scrollbar{width:6px;background-color:#fff}
+#style-3-scrollbar::-webkit-scrollbar-thumb{background-color:silver}
+.scrollbarContent{float:left;height:339px;width:99%;background:#fff;overflow-y:scroll;position:relative;z-index:1;margin:10px 0 0}
+.force-overflowContent{min-height:100px;line-height:1.5;font-size:12px}
+#style-3-scrollbarContent::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.15);background-color:#fff}
+#style-3-scrollbarContent::-webkit-scrollbar{width:6px;background-color:#fff}
+#style-3-scrollbarContent::-webkit-scrollbar-thumb{background-color:silver}
+header{height:120px;width:100%;background-color:#efefef}
+body{box-sizing:border-box;position:relative;display:flex;width:100%;height:100%;flex-direction:column;flex-wrap:nowrap;justify-content:center;align-items:center}
+.gerenciadormidiasWrapper{max-width:1024px;position:relative;display:block}
+.flexColumn{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;justify-content:center;box-sizing:border-box;grid-column:1 / 2;grid-row:1 / 3}
+.flexRow{position:relative;display:flex;flex-direction:row;justify-content:center;align-items:center;justify-content:center;box-sizing:border-box;flex-wrap:wrap}
+.gerenciadormidiasWrapper{position:relative;display:grid;grid-template-columns:1fr 250px;grid-template-rows:80px auto;grid-column-gap:20px;box-sizing:border-box;font-family:"Roboto Condensed",sans-serif;margin:20px}
+.novomidiaBtn{width:155px;height:40px;background-color:#26547C;border-radius:7px;border:none;color:#eee2df;transition:.3s ease all;justify-self:flex-end;cursor:pointer}
+.novomidiaBtn:hover{background-color:#1f8a70;transform:translate(0,-3px);box-shadow:0 3px 20px 0 rgba(0,0,0,0.2)}
+.novomidiaBtnSvg{height:25px;margin-right:8px}
+.midiaAbaTitleWrapper{color:#26547C;font-weight:600}
+.midiaAbaSvg{height:30px;position:relative;margin-right:10px}
+.logsmidiasWrapper{position:relative;border:1.5px solid #eee2df;grid-column:2 / 3;grid-row:2 / 3;border-radius:10px;padding:10px 5px 10px 10px}
+.logsmidiasTitleWrapper{position:absolute;justify-content:flex-start;z-index:100;left:20px;top:-15px}
+.logsmidiasTitle{position:relative;margin-left:6px;color:#8e9aaf;text-transform:uppercase}
+.logsmidiasTitleBg{background-color:#fff;width:140px;height:20px;position:absolute;z-index:-1;left:-6px}
+.logsmidiasTitleBg1{background-color:#fff;width:125px;height:20px;position:absolute;z-index:-1;left:-6px}
+.logsmidiasTitleBg3{background-color:#fff;width:186px;height:20px;position:absolute;z-index:-1;left:-6px}
+.logsSvg{height:30px}
+.novomidiaBtn{grid-column:2 / 3;grid-row:1 / 2}
+.logLineWrapper{position:relative;box-sizing:border-box;display:block;text-align:justify;width:97%;border:1px solid #eee2df;padding:10px;border-radius:5px;color:#26547C;margin-bottom:10px}
+#dotCircleSymbol{color:#eee2df;margin:0 6px}
+.logLineCleanText{color:#8e9aaf}
+.midiaAbaContentWrapper{border:1.5px solid #eee2df;border-radius:10px;padding:10px 5px 10px 10px}
+amp-carousel{position:relative;width:100%;margin:0 auto;color:#233656}
+.favSlidesWrapper{width:85%;height:190px;bottom:7px}
+.midiaBlockWrapper{position:relative;display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto auto;border:1px solid #eee2df;box-sizing:border-box;border-radius:5px;padding:5px 5px 0 4px;width:170px;top:8px;margin-right:20px;left:10px;cursor:pointer;transition:.3s ease all}
+.midiaBlockWrapper:hover{background-color:#8e9aaf;color:#eee2df}
+.midiaBlockWrapper amp-img{position:relative;display:flex;grid-column:1 / 2;grid-row:1 / 3;border-radius:15%;justify-self:center;align-self:center;border:1px solid #eee2df}
+.midiaBlockTitle{position:relative;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;grid-row:1 / 2;grid-column:2 / 3;font-size:14px;line-height:1.3;color:#233656;font-weight:600}
+.midiaBlockTexts{position:relative;display:block;grid-column:2 / 3;grid-row:2 / 4;font-size:12px;list-style:none;margin:0;padding:0;color:#233656;line-height:1.5;width:95px}
+.midiaBlockTexts li{position:relative;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.midiaBlockBtnsWrapper{display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;box-sizing:border-box;grid-column:1 / 2;grid-row:3 / 4;width:100%}
+.midiaBlockBtns{background-color:transparent;border:none;cursor:pointer}
+.midiaBlockBtnsSvg{width:15px;transition:.3s ease all;outline:none}
+.midiaBlockBtnsSvg:hover{fill:#8e9aaf}
+.marginTopBlock{margin-top:30px}
+.ultimosBuscadosBlock{margin:20px 20px 6px 0;width:145px;margin-right:20px;left:10px;top:-5px;width:150px}
+.ultimosBuscadosBlockTitle{width:100px}
+.hvr-grow{display:grid;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform}
+.hvr-grow:hover{-webkit-transform:scale(1.1);transform:scale(1.1);box-shadow:0 0 27px 0 rgba(0,0,0,0.15);background:#80a4be}
+.modalTipomidiaWrapper{position:absolute;display:none;z-index:200;top:60%;left:50%;transform:translate(-50%,-50%);width:70%;background-color:#fff;border-radius:10px;box-shadow:0 0 150px 0 rgba(0,0,0,0.4);font-family:"Roboto Condensed",sans-serif}
+.midiasTemplatesTitle{text-align:center;position:relative;display:block;box-sizing:border-box;margin:40px 0 0;font-size:35px;font-weight:100;color:#26547c}
+.midiasTemplatesWrapper{text-align:center;color:#26547c;font-weight:500;font-size:18px;position:relative;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;align-items:center;box-sizing:border-box;margin:0 30px;padding:0;height:40vh}
+.midiaModalSvg{width:100%;height:100%}
+.midiaModalMapaBrSvg{width:110%;height:110%;justify-self:center;position:relative;top:10px}
+.midiaPersoSvg{width:80%;height:80%;justify-self:center}
+.midiaTemplateBlock{position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:60px 30px auto;background-color:#fff;justify-content:center;align-items:center;box-shadow:0 15px 50px 0 rgba(0,0,0,0.10);height:220px;width:16vw;border-radius:10px;flex-grow:1;margin:10px;box-sizing:border-box;padding:20px;cursor:pointer}
+.arrowText{position:absolute;grid-row:3 / 4;grid-column:1 / 2;justify-self:center;align-self:end;display:flex;flex-direction:column;box-sizing:border-box;align-items:center;justify-content:space-around;height:90px}
+.midiaTemplateBlock span{position:relative}
+.midiaTemplateBlockSvg{height:100%;grid-row:1 / 2;grid-column:1 / 2;justify-self:center}
+#midiaTemplateBlockSvgArrow{height:12px;position:relative}
+.coIcon{position:relative;height:70px;left:5px}
+.latam,.coInt{position:relative;grid-template-rows:80px 10px auto}
+.Influencer{position:relative;grid-template-rows:70px 20px auto}
+.targetSvg{position:relative;left:10px}
+.selecionarmidiaModalCloseBtn{position:absolute;right:20px;top:15px;z-index:20;background-color:transparent;border:none;cursor:pointer}
+.selecionarmidiaModalCloseBtn svg{height:20px}
+    </style>
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+
+
+
+
+  </head>
+
+
+  <body>
+
+
+    <header></header>
+
+
+    <div class="gerenciadormidiasWrapper">
+
+      <div class="abasmidiasWrapper">
+        <!-- abas de midias -->
+        <amp-selector class="tabs-with-flex" role="tablist">
+
+
+          <!-- header btn tab1 -->
+          <div id="tab1" role="tab" aria-controls="tabpanel1" option selected>
+            <div class="midiaAbaTitleWrapper flexRow">
+              <svg class="midiaAbaSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 118 113" xml:space="preserve">
+                <path fill="#E5E5E5" d="M73,11.9c-1.5,4.3-0.2,5.3,4.2,3.9c3.4-1.1,6.5,0.5,9.3,2.5c1.5,1,2.9,2.7,4.8,2.6c8.2-0.7,13.9,5,20.7,7.8c5.4,2.2,8,8.8,4.3,13.3c-8.7,10.6-12.5,23.1-17,35.5c-1.9,5.4-6.1,8.2-12.1,9.1c-5.7,0.8-9.8,4.1-11.5,10.3c-1.7,6.2-7.2,10.3-10.7,15.5c-0.4,0.6-1.6,1.1-2.2,0.9c-4.7-1.6-9.5-3.5-12.4-7.6c-2.4-3.4,0.6-6.4,2.6-8.9c2.4-3,2.3-5.2,0.3-8.4c-3.7-5.8-8.4-11.4-7.2-19.1c0.1-0.5,0-1.3-0.2-1.4c-5.2-2.5-6-9.7-12.1-11.4c-3.6-1-7.5-2.2-8.7-6.6c-0.2-0.8-1.1-1.7-1.8-1.4c-5.6,2.8-10.5-3-16-1.1c-1.7,0.5-3.2-0.5-4.5-1.7c-5-4.9-2.2-17.2,4.5-18.9c3.5-0.9,4.2-2.8,3.5-5.8c-0.3-1.3-0.6-2.6-0.6-3.9c0-6.5,4.8-9.9,10.7-7.5c4,1.7,6.9,2.5,6.4-3.6c-0.2-2.3,1.5-3.6,3.5-4.3c3.7-1.4,7.5-1.2,11.3-0.8c2.3,0.2,3.7,2,3.6,4.1c-0.2,4.5,2.6,3.9,5.3,3.4C54,7.2,57,6,59.6,4.2c2.6-1.8,5.5-3,8.4-1.1C71,5,72.8,8,73,11.9z"/>
+                <path fill="#FFFFFF" d="M21.7,44.3c-2.5,0.9-5.3,0.7-7.9-1.5c-1.2-1-2.8-0.6-4.3-0.4c-4.5,0.6-5.8-0.7-5.2-5.1c0.6-4.3,1.4-7.7,6.9-8.6c4.1-0.7,3.9-5.3,3.3-8.8c-0.4-2.5-1.8-4.9,0.6-6.9c2.1-1.8,4.4-0.5,6.6,0.2c5.5,1.9,9.1-0.7,9.5-6.7c0.3-3.9,3.6-2.7,5.7-3.2c1.8-0.5,4-0.7,4.6,2.3c1.1,5.5,3.5,7,9,6c3.6-0.7,7.1-1.7,10.4-3.5c1.8-1,3.6-3,5.8-1.2c2.1,1.7,2.7,4.1,2.2,6.8c-0.2,1.1-0.6,2.4-0.4,3.4c0.7,3.8,3.3,4.4,6.3,3.1c4.1-1.7,7.7-1.2,11.1,1.7c1,0.8,2.3,1.7,3.5,1.8c7.5,0.2,13.5,4.3,19.9,7.4c5,2.4,6.1,5.7,3.4,10.5c-0.7,1.3-1.6,2.5-2.5,3.7c-4.9,6.1-9.5,12.2-10.2,20.6c-0.3,3.5-2.5,6.8-4,10.2c-1.6,3.5-4.4,5.5-8.4,6.1c-7.6,1.2-13,5.3-15.1,13.2c-1.3,4.8-5,8.5-8.4,11.6c-3,2.7-6.2-1.3-9.1-2.6c-2.3-1-0.7-3.2,0.3-4.7c1-1.5,2.1-3,3.2-4.5c1.6-2.1,1.6-4.2,0.1-6.5c-1.8-2.8-3.5-5.7-5.3-8.4c-2-3-3.1-6.1-3-9.8c0.1-3.8-0.4-7.4-4.8-8.9c-0.4-0.1-1.1-0.5-1.2-0.9c-0.9-6.9-7.1-7-11.7-9.2c-2.1-1-3.6-2.3-4.4-4.5C26.9,44.7,24.8,43.9,21.7,44.3z"/>
+              </svg>
+              <span>Brasil</span>
+            </div>
+          </div>
+          <!-- final header btn tab1 -->
+
+
+
+<!-- tab 1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+          <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
+
+
+
+            <!-- fav carousel slides ####################-->
+            <div class="midiaAbaContentWrapper flexColumn">
+              <div class="flexRow logsmidiasTitleWrapper">
+                <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.3 30" xml:space="preserve">
+                  <path fill="#8E9AAF" d="M29.7,10l-8.6-1.2L17.4,1c-0.7-1.4-2.7-1.4-3.4,0l-3.8,7.8L1.6,10c-1.5,0.2-2.2,2.1-1,3.2l6.2,6l-1.5,8.5c-0.3,1.5,1.4,2.7,2.7,2l7.7-4l7.7,4c1.4,0.7,3-0.4,2.7-2l-1.5-8.5l6.2-6C31.9,12.2,31.3,10.3,29.7,10L29.7,10z M22.6,18.6l1.6,9.5l-8.5-4.5l-8.5,4.5l1.6-9.5l-6.9-6.7l9.5-1.4l4.3-8.6l4.3,8.6l9.5,1.4L22.6,18.6L22.6,18.6z"/>
+                </svg>
+                <span class="logsmidiasTitle">Favoritas</span>
+                <div class="logsmidiasTitleBg1"></div>
+              </div>
+
+
+              <amp-carousel height="88" layout="fixed-height" type="slides">
+
+
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <buttom class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg1.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </buttom>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg2.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg3.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 1 -->
+
+
+
+               <!-- fav carousel slide 2 -->
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg4.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg5.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg6.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 2 -->
+
+
+               <!-- fav carousel slide 3 -->
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg7.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg8.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg9.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 3 -->
+
+
+            </amp-carousel>
+
+
+
+
+
+
+
+            </div>
+            <!-- final fav carousel slides ####################-->
+
+
+<!-- Últimas Buscadas bloco ###############################-->
+            <div class="midiaAbaContentWrapper flexColumn marginTopBlock">
+              <div class="flexRow logsmidiasTitleWrapper">
+                <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 37.5 30" xml:space="preserve">
+                  <path fill="#8E9AAF" d="M13.1,15c4.1,0,7.5-3.4,7.5-7.5S17.3,0,13.1,0S5.6,3.4,5.6,7.5S9,15,13.1,15z M13.1,1.9c3.1,0,5.6,2.5,5.6,5.6s-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6S10,1.9,13.1,1.9z M29.1,13.1c-4.7,0-8.4,3.8-8.4,8.4s3.8,8.4,8.4,8.4c4.7,0,8.4-3.8,8.4-8.4S33.7,13.1,29.1,13.1z M29.1,28.1c-3.6,0-6.6-2.9-6.6-6.6s2.9-6.6,6.6-6.6c3.6,0,6.6,2.9,6.6,6.6S32.7,28.1,29.1,28.1z M21.1,28.1H2.8c-0.5,0-0.9-0.4-0.9-0.9v-2.4c0-3.3,2.7-6,6-6c1.1,0,2.3,0.9,5.3,0.9c3,0,4.1-0.9,5.3-0.9c0.3,0,0.5,0,0.8,0.1c0.2-0.6,0.4-1.2,0.7-1.8c-0.5-0.1-0.9-0.1-1.4-0.1c-1.7,0-2.5,0.9-5.3,0.9s-3.6-0.9-5.3-0.9c-4.4,0-7.9,3.5-7.9,7.9v2.4C0,28.7,1.3,30,2.8,30h20.3C22.4,29.5,21.7,28.8,21.1,28.1L21.1,28.1z M32.2,20.6H30v-3.2c0-0.3-0.3-0.6-0.6-0.6h-0.7c-0.3,0-0.6,0.3-0.6,0.6v4.5c0,0.3,0.3,0.6,0.6,0.6h3.6c0.3,0,0.6-0.3,0.6-0.6v-0.7C32.8,20.9,32.6,20.6,32.2,20.6L32.2,20.6z"/>
+                </svg>
+                <span class="logsmidiasTitle">Últimas Buscadas</span>
+                <div class="logsmidiasTitleBg3"></div>
+              </div>
+              <div class="scrollbarContent" id="style-3-scrollbarContent">
+                <div class="force-overflowContent flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg10.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg11.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg12.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg13.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg14.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg15.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg16.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg17.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg18.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg19.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg20.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg21.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+                </div>
+              </div>
+            </div>
+            <!-- final Últimas Buscadas bloco ###############################-->
+
+
+          </div>
+          <!-- fim tab1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+
+
+          <!-- header btn tab3 -->
+          <div id="tab3" role="tab" aria-controls="tabpanel3" option>
+            <div class="midiaAbaTitleWrapper flexRow">
+              <svg class="midiaAbaSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 356.4 399.4" xml:space="preserve">
+                <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M173.4,393.4L173.4,393.4L173.4,393.4z"></path>
+                <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M173.4,398.4L173.4,398.4c1.4,0,2.5-1.1,2.5-2.5c0-1.4-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5C170.9,397.3,172,398.4,173.4,398.4L173.4,398.4z"></path>
+                <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M178,396.9c-0.4,0-0.8-0.1-1.1-0.3l-7.1-3.5c-0.7-0.3-1.1-0.9-1.3-1.7c-0.2-0.7,0-1.5,0.4-2.1l0.8-1c0,0,0.3-13.6,0.3-13.6c0-0.5,0.2-0.9,0.4-1.3l0.1-0.2l-0.3-2.4l-0.6-2.4c-0.1-0.3-0.1-0.6,0-0.8l0.3-2.4l-0.7-6.8c0-0.1,0-0.1,0-0.2l-0.1-8.8c0-0.2,0-0.5,0.1-0.7l2.2-8.4l-0.5-9.6c0-0.5,0.1-0.9,0.3-1.3l5.9-11.3l1.7-11.7l8.7-47.2l-6-19.9l-22-15.3c-0.4-0.3-0.7-0.6-0.9-1.1l-4.1-9.7l-5.7-10.2l-14.7-20.1c-0.3-0.5-0.5-1-0.5-1.6l0.4-9.4c0-0.4,0.2-0.9,0.4-1.2l5.4-8.6L137,154c-0.3-0.8-0.1-1.7,0.4-2.4l8.3-10.2l0.8-3c0.2-0.7,0.7-1.4,1.5-1.7l3.2-1.3l0.4-5.6l1.2-11l-2.9-7.1l-9.5,0.8l-2.4,1.3l-2.2,1.3c-0.4,0.2-0.8,0.3-1.2,0.3c-0.2,0-0.4,0-0.6-0.1l-6.8-1.6c-0.6-0.1-1.1-0.5-1.4-1l-0.7-0.9h-0.9c-0.8,0-1.5-0.4-2-1l-2.9-3.8l-2.9-2.6c0,0-0.1-0.1-0.1-0.1l-5.1-5.1c-0.5-0.5-0.8-1.2-0.7-1.9c0-0.3,0.1-0.5,0.2-0.7l-5-4.7c-0.4-0.3-0.6-0.8-0.7-1.3l-0.5-2.2c0-0.1,0-0.1,0-0.2l0,0l-3.9,0.6c-0.1,0-0.2,0-0.4,0c-0.3,0-0.6-0.1-0.9-0.2c0,0-1.5-0.6-1.5-0.6l-17.9-8l-17.2-2.1c-0.4,0-0.7-0.2-1-0.4L33,59.6c-0.1-0.1-0.2-0.1-0.3-0.2L29,56.3c-0.3-0.2-0.5-0.5-0.6-0.8L17.5,33.6c-0.1-0.2-0.2-0.5-0.2-0.8l-1.1-8l-0.6-0.3L15,28.1l0.7,10.3c0,0.4,0,0.8-0.2,1.1l-2.2,5.3c-0.4,0.9-1.3,1.5-2.3,1.6c0,0,0,0,0,0c-1,0-1.9-0.6-2.3-1.5l-3-6.9c-0.1-0.3-0.2-0.5-0.2-0.8l-0.5-7.9l-1.2-0.6c-0.6-0.3-1.1-0.9-1.3-1.6c-0.2-0.7-0.1-1.4,0.3-2l0.5-0.8L4.6,4.8c0-0.7,0.4-1.4,1-1.9c0.4-0.3,0.9-0.5,1.5-0.5c0.2,0,0.4,0,0.6,0.1l14.2,3.7l11-2.3c0.2,0,0.3-0.1,0.5-0.1c0.4,0,0.8,0.1,1.1,0.3L44.2,9c0.4,0.2,0.8,0.5,1,0.9l2.1,3.4l3.1-2.4c0.5-0.3,1-0.5,1.5-0.5c0.7,0,1.4,0.3,1.9,0.9l8.7,10.5l4.3,4.3l4.6,3.3c0.5,0.4,0.9,1,1,1.7L76.8,60l15.8-7l6.5-6.2c0.4-0.4,1-0.7,1.6-0.7c0,0,11.1-0.3,11.2-0.3c0.9,0,1.7,0.5,2.2,1.3c0.5,0.8,0.4,1.8-0.1,2.6l-4.9,7.4l-2,7.9l-0.7,2.8c-0.1,0.4-0.3,0.7-0.5,1l-2.7,3.2l23.7,4.1c0.7,0.1,1.3,0.5,1.6,1.1c0.4,0.6,0.5,1.2,0.4,1.9L126,94.5l5.9,6.9l1.5,1.4l10-2c0.2,0,0.3,0,0.5,0c0.4,0,0.9,0.1,1.3,0.3l12,7.1l2.3-3.9l1.7-4.2c0.2-0.4,0.5-0.8,0.8-1.1l6.4-4.7c0.3-0.2,0.5-0.3,0.9-0.4l6.7-1.7l5-1.3c0.2-0.1,0.4-0.1,0.6-0.1c0,0,2.4,0.1,2.4,0.1l0.9-0.3l1-0.6c0.4-0.2,0.7-0.3,1.2-0.4l1.5-0.1l2-0.3c0.1,0,0.3,0,0.4,0c0.2,0,0.3,0,0.5,0l1.8,0.3l1.7,0.4c0.3,0.1,0.5,0.2,0.8,0.3l9.6,6l9.5-0.2c0,0,5.5-0.2,5.5-0.2c0.1,0,0.2,0,0.3,0l5.5,0.6c0.5,0.1,0.9,0.2,1.3,0.5l1.2,1c0,0,0.1,0.1,0.1,0.1l10,9c0,0,0.1,0.1,0.1,0.1l8.7,9c0.5-0.7,1.2-1,2-1c0.2,0,0.5,0,0.7,0.1l21,6c1.1,0.3,1.8,1.3,1.8,2.4l0.1,11l0,1.3l7.2-6.9c0.5-0.5,1.1-0.7,1.7-0.7c0.2,0,0.3,0,0.5,0c0.8,0.1,1.5,0.7,1.8,1.4l6.2,13l1.8,3.2c0.5,0.9,0.4,2-0.2,2.8l-4.8,6.1c0.3,0.3,0.6,0.6,0.7,1l3.8,0.3c1,0.1,1.8,0.7,2.2,1.6c0.1,0.3,0.2,0.7,0.2,1c0.4-0.3,0.9-0.4,1.4-0.4c0.2,0,0.4,0,0.5,0.1l2.2,0.5l1.4-0.5l6.4-2.1c0.3-0.1,0.5-0.1,0.8-0.1c0.5,0,1,0.2,1.5,0.5c0.4,0.3,0.7,0.7,0.9,1.2c0,0,0.7,0.7,0.7,0.7c0.2,0,0.3-0.1,0.5-0.1c0.2,0,0.3,0,0.5,0c1,0.2,1.8,0.9,2,1.9l0.3,1.2c0.5,0.1,0.9,0.4,1.2,0.8c0.4,0.5,0.6,1.2,0.5,1.9l-0.3,2.1l0.7,1.5c0.1,0.2,0.2,0.4,0.2,0.6l7.7-1.4c0.1,0,0.3,0,0.4,0c0.1,0,0.2,0,0.3,0l10.6,1.1c0.6,0.1,1.2,0.3,1.6,0.8l9.2,9.8l7.5,3.7c1.2,0.6,1.7,2,1.2,3.2L340,218.5c-0.2,0.5-0.6,0.9-1.1,1.2l-2.5,1.4l-9.3,31.6c-0.1,0.4-0.4,0.8-0.7,1.1L310,269.5c-0.2,0.2-0.5,0.4-0.8,0.5l-13.3,5.1l-11.1,6.3l-9.9,18.1l-2.3,4.4c-0.2,0.3-0.4,0.6-0.8,0.9l-6.2,4.5l-9.1,10.7c-0.5,0.6-1.2,0.9-1.9,0.9c-0.2,0-0.4,0-0.7-0.1l-14.6-4l2.2,14c0.2,1.2-0.6,2.4-1.8,2.8l-20.2,6l0.1,0.2c0.3,1.2-0.3,2.4-1.5,2.9l-9.4,4l2.2,3.3c0.5,0.7,0.6,1.7,0.2,2.5l-1.6,3.2c-0.2,0.4-0.6,0.8-1,1l-1.7,1l-1.4,1.1l-1.5,1.3l-0.8,2.8c-0.2,0.9-0.9,1.6-1.8,1.8l-2.3,0.6l-1,4.4l2.1,2.6c0.5,0.6,0.7,1.3,0.5,2c-0.1,0.7-0.6,1.4-1.2,1.7l-5.6,3.2l-3.7,2.4v7.6c0,0.9-0.5,1.8-1.3,2.2l-9.7,5.1C178.8,396.8,178.4,396.9,178,396.9z"></path>
+                <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M7.1,5l14.7,3.9l11.6-2.5l9.6,4.8l3.5,5.8l5.3-4l8.8,10.6l4.5,4.6l4.7,3.4l4.9,32.1l19.2-8.5l6.9-6.5l11.1-0.3l-5.1,7.7l-2.1,8.3l-0.7,2.8l-5.4,6.6l27.9,4.8l-3.4,16.7l6.8,7.9l2.5,2.4l11.3-2.3l14.2,8.4l3.7-6.2l1.8-4.4l6.4-4.7l6.7-1.7l5-1.3l2.8,0.1l1.5-0.5l1.3-0.8l1.6-0.1l2.2-0.3l1.8,0.3l1.6,0.4l10.2,6.4l10.2-0.2l5.5-0.2l5.5,0.6l1.2,1l10,9l10.9,11.3l1.6-2.6l21,6l0.1,11l0.3,7l11.2-10.8l6.2,13.1l1.8,3.3l-8.4,10.6l1.9-0.9v1.3l2.1-1.4l0.2,1.4l5.7,0.4l-4.1,4.4l5.1-1l-1,3.5l3.9-4.8l2.9,0.6l2.1-0.8l6.3-2.1v2.3l0.6-1.3l2.3,2.3l0.6-1l0.6,2.9l1.3,0.1l-0.3,2.8l0.9,2.2l-0.3,2.7l10.9-1.9l10.6,1.1l9.5,10.1l7.9,3.9l-13.7,32.8l-3.4,1.9l-9.6,32.6l-16.5,15.7l-13.5,5.1l-11.9,6.8l-10.2,18.7l-2.3,4.5l-6.5,4.7l-9.3,11l-18.4-5l2.8,17.8l-22.5,6.6l0.6,2.6l-12.2,5.1l3.9,5.8l-1.6,3.2l-1.8,1.1l-1.5,1.3l-2.1,1.8l-1,3.6l-3.8,1l-1.7,7.1l2.9,3.5l-5.7,3.3l-4.9,3.2v9l-9.7,5.1l-1.9-1l-5.1-2.6l1.9-2.6h-0.6l0.3-13.5l0.6-1l-0.5-3.4l-0.6-2.5l0.3-2.6l-0.7-7.1l-0.1-8.8l2.3-8.8l-0.6-10l6.1-11.7l1.8-12.1l8.8-47.7l-6.4-21.3L160.9,222l-4.1-9.8l-5.8-10.5l-14.8-20.3l0.4-9.4l6.1-9.6l-3.2-9.3l8.7-10.6l1-3.5l4.6-1.9l0.5-7.1l1.3-11.6l-3.9-9.3l-11.9,1l-2.9,1.6l-2.3,1.3l-6.8-1.6l-1.1-1.5l-0.8-0.4h-1.6l-3-4l-3.1-2.8l-5.1-5.1l1.3-1l-6.9-6.4l-0.5-2.2l-0.3-2.6l-6.4,1l-1.4-0.6l-18.2-8.2L63,75.4L34.4,57.5l-3.7-3.1L19.7,32.5l-1.3-9.3L13.5,21l-1,7.1l0.8,10.6L11.1,44l-3-6.9l-0.6-9.3L5,26.4l0.9-1.3L7.1,5 M7.1,0c-1,0-2.1,0.3-2.9,0.9C3,1.8,2.2,3.2,2.1,4.7L1,23.5l-0.1,0.2c-0.8,1.2-1,2.7-0.6,4c0.4,1.4,1.3,2.5,2.5,3.1l0.4,6.5c0,0.6,0.2,1.1,0.4,1.6l3,6.9c0.8,1.8,2.6,3,4.6,3c0,0,0,0,0,0c2,0,3.8-1.2,4.6-3.1l2.2-5.3c0-0.1,0.1-0.2,0.1-0.2l8.2,16.4c0.3,0.6,0.7,1.2,1.3,1.6l3.7,3.1c0.2,0.1,0.4,0.3,0.5,0.4l28.6,17.9c0.6,0.4,1.3,0.6,2.1,0.7l16.8,2l17.5,7.8c0.1,0,0.1,0.1,0.2,0.1l1.4,0.6c0.6,0.2,1.2,0.4,1.9,0.4c0.2,0,0.5,0,0.7-0.1l1.6-0.2l0,0.2c0.2,1,0.7,1.9,1.5,2.6l4,3.8c0,1.3,0.5,2.6,1.5,3.5l5.1,5.1c0.1,0.1,0.1,0.1,0.2,0.2l2.7,2.4l2.7,3.6c0.9,1.1,2.2,1.9,3.6,2c0.7,0.9,1.7,1.5,2.8,1.8l6.8,1.6c0.4,0.1,0.8,0.1,1.2,0.1c0.9,0,1.7-0.2,2.5-0.7l2.2-1.3l1.9-1.1l7.2-0.6l2,4.8l-1.1,10.3c0,0.1,0,0.1,0,0.2l-0.3,4l-1.8,0.7c-1.4,0.6-2.5,1.8-2.9,3.3l-0.7,2.5l-8,9.8c-1.1,1.3-1.4,3.2-0.9,4.8l2.4,7.1l-4.8,7.6c-0.5,0.7-0.7,1.6-0.8,2.5l-0.4,9.4c0,1.1,0.3,2.2,1,3.1l14.6,20l5.5,10l4,9.6c0.4,0.9,1,1.6,1.8,2.2l21.3,14.8l5.5,18.4l-8.6,46.5c0,0.1,0,0.1,0,0.2l-1.6,11.3l-5.7,10.9c-0.4,0.8-0.6,1.7-0.6,2.6l0.5,9.2l-2.1,8.1c-0.1,0.4-0.2,0.9-0.2,1.4l0.1,8.8c0,0.1,0,0.3,0,0.4l0.7,6.6l-0.2,2.1c-0.1,0.6,0,1.1,0.1,1.7l0.5,2.3l0.2,1.4c-0.3,0.6-0.4,1.3-0.4,1.9l-0.3,12.8l-0.3,0.4c-0.9,1.2-1.2,2.7-0.9,4.1c0.3,1.4,1.3,2.7,2.6,3.3l5.1,2.6l1.9,1c0.7,0.4,1.5,0.5,2.2,0.5c0.8,0,1.6-0.2,2.4-0.6l9.7-5.1c1.6-0.9,2.6-2.6,2.6-4.4V383l2.5-1.6l5.6-3.2c1.3-0.7,2.2-2,2.4-3.4s-0.1-2.9-1-4.1l-1.3-1.6l0.4-1.7l0.8-0.2c1.8-0.4,3.2-1.8,3.6-3.6l0.5-2.1l0.9-0.8l1.2-1l1.5-0.9c0.8-0.5,1.5-1.2,1.9-2.1l1.6-3.2c0.8-1.6,0.7-3.5-0.3-5l-0.5-0.8l6.6-2.8c1.6-0.7,2.6-2,3-3.6l18.3-5.4c2.4-0.7,3.9-3.1,3.5-5.6l-1.6-10.1l10.9,3c0.4,0.1,0.9,0.2,1.3,0.2c1.5,0,2.9-0.6,3.8-1.8l8.9-10.5l6-4.3c0.6-0.5,1.2-1.1,1.5-1.8l2.3-4.4l9.5-17.4l10.3-5.9l13.2-5c0.6-0.2,1.2-0.6,1.7-1l16.5-15.7c0.6-0.6,1.1-1.4,1.4-2.2l9-30.7l1.6-0.9c1-0.5,1.7-1.4,2.1-2.4l13.7-32.8c1-2.4,0-5.2-2.4-6.4l-7.1-3.5l-8.9-9.5c-0.8-0.9-1.9-1.4-3.1-1.6l-10.6-1.1c-0.2,0-0.3,0-0.5,0c-0.3,0-0.6,0-0.9,0.1l-5.5,1l0.1-1.1c0.2-1.3-0.2-2.7-1-3.7c-0.3-0.4-0.6-0.7-1-0.9l0-0.1c-0.4-2-2-3.5-4-3.8c-0.1,0-0.2,0-0.3,0c-0.3-0.5-0.8-1-1.3-1.4c-0.9-0.6-1.9-0.9-2.9-0.9c-0.5,0-1.1,0.1-1.6,0.3l-6.3,2.1c-0.1,0-0.1,0-0.2,0.1l-0.7,0.3l-1.4-0.3c-0.3-0.1-0.6-0.1-0.9-0.1c-0.9-1.3-2.2-2.1-3.8-2.2l-0.5,0l2.5-3.2c1.3-1.6,1.4-3.8,0.4-5.5l-1.8-3.1l-6.1-13c-0.7-1.5-2-2.5-3.6-2.8c-0.3-0.1-0.6-0.1-0.9-0.1c-1.3,0-2.5,0.5-3.5,1.4l-3,2.9l0-6.5c0-2.2-1.5-4.2-3.6-4.8l-21-6c-0.5-0.1-0.9-0.2-1.4-0.2c-0.6,0-1.2,0.1-1.7,0.3l-7.3-7.5c-0.1-0.1-0.2-0.2-0.2-0.2l-10-9c-0.1-0.1-0.1-0.1-0.2-0.2l-1.2-1c-0.7-0.6-1.6-1-2.6-1.1l-5.5-0.6c-0.2,0-0.4,0-0.6,0c-0.1,0-0.1,0-0.2,0l-5.4,0.2l-8.7,0.2l-9-5.6c-0.5-0.3-1-0.5-1.5-0.6l-1.6-0.4c-0.1,0-0.1,0-0.2,0l-1.8-0.3c-0.3-0.1-0.6-0.1-0.9-0.1c-0.3,0-0.5,0-0.8,0.1l-1.9,0.3l-1.4,0.1c-0.8,0-1.6,0.3-2.3,0.7l-0.8,0.5l-0.2,0.1l-1.8-0.1c-0.1,0-0.1,0-0.2,0c-0.4,0-0.8,0.1-1.2,0.2l-5,1.3l-6.7,1.7c-0.6,0.2-1.2,0.4-1.7,0.8l-6.4,4.7c-0.7,0.5-1.3,1.3-1.7,2.1l-1.7,4l-1,1.6l-9.8-5.8c-0.8-0.5-1.7-0.7-2.5-0.7c-0.3,0-0.7,0-1,0.1l-8.7,1.7l-0.4-0.4l-5.1-5.9l2.9-14.3c0.3-1.3,0-2.7-0.8-3.8c-0.8-1.1-1.9-1.9-3.3-2.1L108,70.2c0.4-0.6,0.8-1.2,0.9-1.9l0.7-2.8l1.9-7.4l4.7-7c1-1.6,1.1-3.6,0.2-5.2c-0.9-1.6-2.6-2.6-4.4-2.6c0,0-0.1,0-0.1,0l-11.1,0.3c-1.2,0-2.4,0.5-3.3,1.4l-6.2,5.9l-12.5,5.5l-3.9-25.6c-0.2-1.3-0.9-2.5-2-3.3l-4.4-3.1l-4.1-4.1L55.7,9.8c-1-1.2-2.4-1.8-3.8-1.8c-1.1,0-2.1,0.3-3,1L48,9.7l-0.6-1c-0.5-0.8-1.2-1.4-2-1.9L35.7,2c-0.7-0.4-1.5-0.5-2.3-0.5c-0.3,0-0.7,0-1,0.1L22,3.8L8.4,0.2C8,0.1,7.6,0,7.1,0L7.1,0z"></path>
+                <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M151.5,57.2c-0.4,0-0.7-0.1-1.1-0.2l-19.3-9.2l-3.1,0.5l-6,1.7c-0.2,0.1-0.4,0.1-0.7,0.1h-1.8c-0.7,0-1.4-0.3-1.9-0.9l-1.5-1.8c-0.6-0.7-0.7-1.6-0.5-2.4c0.3-0.8,0.9-1.4,1.8-1.7l21.8-5.4c0.2,0,0.4-0.1,0.6-0.1c0.3,0,0.6,0.1,0.9,0.2l21.3,8.6c0.1,0,0.1,0.1,0.2,0.1l7.4,3.9c1,0.5,1.5,1.6,1.3,2.7c-0.2,1.1-1.1,1.9-2.2,2l-17,1.9C151.7,57.2,151.6,57.2,151.5,57.2z"></path>
+                <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M139.9,40.3l21.3,8.6l7.4,3.9l-17,1.9h0l-20-9.6l-4,0.7l-6.1,1.7h-1.8l-1.5-1.8L139.9,40.3 M139.9,35.3c-0.4,0-0.8,0-1.2,0.1l-21.8,5.4c-1.7,0.4-3,1.7-3.6,3.3c-0.5,1.6-0.2,3.4,0.9,4.8l1.5,1.8c1,1.1,2.3,1.8,3.8,1.8h1.8c0.5,0,0.9-0.1,1.3-0.2l5.9-1.6l2.2-0.4l18.6,8.9c0.7,0.3,1.4,0.5,2.2,0.5c0.2,0,0.4,0,0.6,0l17-1.9c2.2-0.2,4-1.9,4.4-4.1c0.4-2.2-0.7-4.3-2.6-5.3l-7.4-3.9c-0.1-0.1-0.3-0.1-0.4-0.2l-21.3-8.6C141.2,35.4,140.5,35.3,139.9,35.3L139.9,35.3z"></path>
+              </svg>
+              <span>Latam</span>
+            </div>
+          </div>
+          <!-- final header btn tab3 -->
+
+
+
+<!-- tab 3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+          <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
+
+
+
+
+            <!-- fav carousel slides ####################-->
+            <div class="midiaAbaContentWrapper flexColumn">
+              <div class="flexRow logsmidiasTitleWrapper">
+                <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.3 30" xml:space="preserve">
+                  <path fill="#8E9AAF" d="M29.7,10l-8.6-1.2L17.4,1c-0.7-1.4-2.7-1.4-3.4,0l-3.8,7.8L1.6,10c-1.5,0.2-2.2,2.1-1,3.2l6.2,6l-1.5,8.5c-0.3,1.5,1.4,2.7,2.7,2l7.7-4l7.7,4c1.4,0.7,3-0.4,2.7-2l-1.5-8.5l6.2-6C31.9,12.2,31.3,10.3,29.7,10L29.7,10z M22.6,18.6l1.6,9.5l-8.5-4.5l-8.5,4.5l1.6-9.5l-6.9-6.7l9.5-1.4l4.3-8.6l4.3,8.6l9.5,1.4L22.6,18.6L22.6,18.6z"/>
+                </svg>
+                <span class="logsmidiasTitle">Favoritas</span>
+                <div class="logsmidiasTitleBg1"></div>
+              </div>
+
+
+              <amp-carousel height="88" layout="fixed-height" type="slides">
+
+
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <buttom class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg2.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </buttom>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg3.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg5.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 1 -->
+
+
+
+               <!-- fav carousel slide 2 -->
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg8.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg12.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg15.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 2 -->
+
+
+               <!-- fav carousel slide 3 -->
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg11.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg10.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg3.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 3 -->
+
+
+            </amp-carousel>
+
+
+
+
+
+            </div>
+            <!-- final fav carousel slides ####################-->
+
+
+<!-- Últimas Buscadas bloco ###############################-->
+            <div class="midiaAbaContentWrapper flexColumn marginTopBlock">
+              <div class="flexRow logsmidiasTitleWrapper">
+                <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 37.5 30" xml:space="preserve">
+                  <path fill="#8E9AAF" d="M13.1,15c4.1,0,7.5-3.4,7.5-7.5S17.3,0,13.1,0S5.6,3.4,5.6,7.5S9,15,13.1,15z M13.1,1.9c3.1,0,5.6,2.5,5.6,5.6s-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6S10,1.9,13.1,1.9z M29.1,13.1c-4.7,0-8.4,3.8-8.4,8.4s3.8,8.4,8.4,8.4c4.7,0,8.4-3.8,8.4-8.4S33.7,13.1,29.1,13.1z M29.1,28.1c-3.6,0-6.6-2.9-6.6-6.6s2.9-6.6,6.6-6.6c3.6,0,6.6,2.9,6.6,6.6S32.7,28.1,29.1,28.1z M21.1,28.1H2.8c-0.5,0-0.9-0.4-0.9-0.9v-2.4c0-3.3,2.7-6,6-6c1.1,0,2.3,0.9,5.3,0.9c3,0,4.1-0.9,5.3-0.9c0.3,0,0.5,0,0.8,0.1c0.2-0.6,0.4-1.2,0.7-1.8c-0.5-0.1-0.9-0.1-1.4-0.1c-1.7,0-2.5,0.9-5.3,0.9s-3.6-0.9-5.3-0.9c-4.4,0-7.9,3.5-7.9,7.9v2.4C0,28.7,1.3,30,2.8,30h20.3C22.4,29.5,21.7,28.8,21.1,28.1L21.1,28.1z M32.2,20.6H30v-3.2c0-0.3-0.3-0.6-0.6-0.6h-0.7c-0.3,0-0.6,0.3-0.6,0.6v4.5c0,0.3,0.3,0.6,0.6,0.6h3.6c0.3,0,0.6-0.3,0.6-0.6v-0.7C32.8,20.9,32.6,20.6,32.2,20.6L32.2,20.6z"/>
+                </svg>
+                <span class="logsmidiasTitle">Últimas Buscadas</span>
+                <div class="logsmidiasTitleBg3"></div>
+              </div>
+              <div class="scrollbarContent" id="style-3-scrollbarContent">
+                <div class="force-overflowContent flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg11.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg12.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg13.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg14.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg15.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg8.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg6.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg5.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg3.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg10.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg9.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg6.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+                </div>
+              </div>
+            </div>
+            <!-- final Últimas Buscadas bloco ###############################-->
+
+
+          </div>
+          <!-- fim tab3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+
+
+          <!-- tab5 -->
+          <div id="tab5" role="tab" aria-controls="tabpanel5" option>
+            <div class="midiaAbaTitleWrapper flexRow">
+              <svg class="midiaAbaSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64.7 57.6" xml:space="preserve">
+                <path fill="none" stroke="#eee2df" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1.3,42.6V4.3c0-1.6,1.4-3,3-3h14.6l4.7,6.5H51"/>
+                <polyline fill="none" stroke="#eee2df" stroke-width="2.5" stroke-linejoin="round" stroke-miterlimit="10" points="31.4,42.6 1.3,42.6 12.8,15.7 61.7,15.7 57.3,26.1"/>
+                <line fill="none" stroke="#eee2df" stroke-width="2.5" stroke-miterlimit="10" x1="56.4" y1="42.6" x2="43.3" y2="42.6"/>
+                <line fill="none" stroke="#eee2df" stroke-width="2.5" stroke-miterlimit="10" x1="49.8" y1="49.1" x2="49.8" y2="36"/>
+                <circle fill="none" stroke="#eee2df" stroke-width="2.5" stroke-linejoin="round" stroke-miterlimit="10" cx="49.7" cy="42.6" r="13.7"/>
+              </svg>
+              <span>Personalizada</span>
+            </div>
+          </div>
+          <!-- final header btn tab4 -->
+
+
+
+<!-- tab 5 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+          <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
+
+
+
+
+            <!-- fav carousel slides ####################-->
+            <div class="midiaAbaContentWrapper flexColumn">
+              <div class="flexRow logsmidiasTitleWrapper">
+                <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.3 30" xml:space="preserve">
+                  <path fill="#8E9AAF" d="M29.7,10l-8.6-1.2L17.4,1c-0.7-1.4-2.7-1.4-3.4,0l-3.8,7.8L1.6,10c-1.5,0.2-2.2,2.1-1,3.2l6.2,6l-1.5,8.5c-0.3,1.5,1.4,2.7,2.7,2l7.7-4l7.7,4c1.4,0.7,3-0.4,2.7-2l-1.5-8.5l6.2-6C31.9,12.2,31.3,10.3,29.7,10L29.7,10z M22.6,18.6l1.6,9.5l-8.5-4.5l-8.5,4.5l1.6-9.5l-6.9-6.7l9.5-1.4l4.3-8.6l4.3,8.6l9.5,1.4L22.6,18.6L22.6,18.6z"/>
+                </svg>
+                <span class="logsmidiasTitle">Favoritas</span>
+                <div class="logsmidiasTitleBg1"></div>
+              </div>
+
+
+              <amp-carousel height="88" layout="fixed-height" type="slides">
+
+
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <buttom class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg1.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </buttom>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg2.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg3.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 1 -->
+
+
+
+               <!-- fav carousel slide 2 -->
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg4.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg5.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg6.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 2 -->
+
+
+               <!-- fav carousel slide 3 -->
+              <div class="favSlidesWrapper flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg7.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg8.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper">
+                  <amp-img src="img/midiaImg9.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#FFE11A" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#D9D1C7" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+              </div>
+                <!-- final fav carousel slide 3 -->
+
+
+            </amp-carousel>
+
+
+
+
+
+            </div>
+            <!-- final fav carousel slides ####################-->
+
+
+<!-- Últimas Buscadas bloco ###############################-->
+            <div class="midiaAbaContentWrapper flexColumn marginTopBlock">
+              <div class="flexRow logsmidiasTitleWrapper">
+                <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 37.5 30" xml:space="preserve">
+                  <path fill="#8E9AAF" d="M13.1,15c4.1,0,7.5-3.4,7.5-7.5S17.3,0,13.1,0S5.6,3.4,5.6,7.5S9,15,13.1,15z M13.1,1.9c3.1,0,5.6,2.5,5.6,5.6s-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6S10,1.9,13.1,1.9z M29.1,13.1c-4.7,0-8.4,3.8-8.4,8.4s3.8,8.4,8.4,8.4c4.7,0,8.4-3.8,8.4-8.4S33.7,13.1,29.1,13.1z M29.1,28.1c-3.6,0-6.6-2.9-6.6-6.6s2.9-6.6,6.6-6.6c3.6,0,6.6,2.9,6.6,6.6S32.7,28.1,29.1,28.1z M21.1,28.1H2.8c-0.5,0-0.9-0.4-0.9-0.9v-2.4c0-3.3,2.7-6,6-6c1.1,0,2.3,0.9,5.3,0.9c3,0,4.1-0.9,5.3-0.9c0.3,0,0.5,0,0.8,0.1c0.2-0.6,0.4-1.2,0.7-1.8c-0.5-0.1-0.9-0.1-1.4-0.1c-1.7,0-2.5,0.9-5.3,0.9s-3.6-0.9-5.3-0.9c-4.4,0-7.9,3.5-7.9,7.9v2.4C0,28.7,1.3,30,2.8,30h20.3C22.4,29.5,21.7,28.8,21.1,28.1L21.1,28.1z M32.2,20.6H30v-3.2c0-0.3-0.3-0.6-0.6-0.6h-0.7c-0.3,0-0.6,0.3-0.6,0.6v4.5c0,0.3,0.3,0.6,0.6,0.6h3.6c0.3,0,0.6-0.3,0.6-0.6v-0.7C32.8,20.9,32.6,20.6,32.2,20.6L32.2,20.6z"/>
+                </svg>
+                <span class="logsmidiasTitle">Últimas Buscadas</span>
+                <div class="logsmidiasTitleBg3"></div>
+              </div>
+              <div class="scrollbarContent" id="style-3-scrollbarContent">
+                <div class="force-overflowContent flexRow">
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg10.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg11.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg12.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg13.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg14.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg15.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg16.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg17.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg18.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+                <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg19.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg20.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+
+
+               <!-- cartão midia -->
+                <div class="midiaBlockWrapper ultimosBuscadosBlock">
+                  <amp-img src="img/midiaImg21.jpg" width="33" height="33" alt=""></amp-img>
+                  <span class="midiaBlockTitle ultimosBuscadosBlockTitle">Nome da Mídia</span>
+                  <ul class="midiaBlockTexts">
+                    <li>Jornal</li>
+                    <li>São Paulo</li>
+                    <li>Estado: SP</li>
+                  </ul>
+                  <div class="midiaBlockBtnsWrapper">
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.7 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M7,0.5L5.1,4.4L0.8,5C0,5.1-0.3,6.1,0.3,6.6l3.1,3l-0.7,4.3c-0.1,0.8,0.7,1.3,1.4,1l3.8-2l3.8,2c0.7,0.4,1.5-0.2,1.4-1l-0.7-4.3l3.1-3c0.6-0.5,0.2-1.5-0.5-1.6l-4.3-0.6L8.7,0.5C8.3-0.2,7.3-0.2,7,0.5L7,0.5z"/>
+                      </svg>
+                    </button>
+                    <button class="midiaBlockBtns">
+                      <svg class="midiaBlockBtnsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.1 15" xml:space="preserve">
+                        <path fill="#eee2df" d="M11.5,4.1L12,3.6c0.1-0.1,0.1-0.4,0-0.5L11.9,3c-0.1-0.1-0.4-0.1-0.5,0l-0.5,0.5C9.8,2.6,8.5,2,7,1.9V0.9h0.7c0.2,0,0.4-0.2,0.4-0.4V0.4C8.1,0.2,7.9,0,7.7,0H5.4C5.2,0,5,0.2,5,0.4v0.2c0,0.2,0.2,0.4,0.4,0.4h0.7v1C2.7,2.1,0,5,0,8.4C0,12.1,2.9,15,6.6,15s6.6-2.9,6.6-6.6C13.1,6.8,12.5,5.3,11.5,4.1z M6.6,14.1c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S9.7,14.1,6.6,14.1z M6.7,10.3H6.4c-0.2,0-0.4-0.2-0.4-0.4V5c0-0.2,0.2-0.4,0.4-0.4h0.2C6.9,4.7,7,4.8,7,5V10C7,10.2,6.9,10.3,6.7,10.3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- final cartão midia -->
+                </div>
+              </div>
+            </div>
+            <!-- final Últimas Buscadas bloco ###############################-->
+
+
+          </div>
+          <!-- fim tab5 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+        </amp-selector>
+        <!-- fim abas de midias -->
+      </div>
+
+
+<!-- novo midia btn -->
+        <button class="novomidiaBtn flexRow">
+          <svg class="novomidiaBtnSvg" fill="#eee2df" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path d="M544 184.88V32c0-8.74-6.98-32-31.99-32H512c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64l-.48 32c0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h106.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.12c19.05-11.09 32-31.49 32-55.12.01-23.63-12.94-44.03-31.99-55.12zM223.76 480l-105.89-.03c-14.83-30.56-22.35-62.19-22.36-95.49l.48-32L96 352h99.33c-2.31 10.7-3.81 21.43-3.81 32 0 35.29 11.3 68.78 32.24 96zM64 320c-17.64 0-32-14.36-32-32v-96c0-17.64 14.36-32 32-32h192v160H64zm448.05 126.93c-.04.25-.13.58-.25.9l-84.83-67.87C386.99 348 338.54 328.14 288 322.13V157.87c50.54-6.01 98.99-25.87 138.98-57.84l84.87-67.9c.03.03.06.05.08.05.04 0 .06-.05.07-.17l.05 414.92z"/>
+          </svg>
+          <span>Nova mídia</span>
+        </button>
+<!-- fim novo midia btn -->
+
+
+
+
+
+
+
+<!-- logs ################################ -->
+      <div class="logsmidiasWrapper">
+        <div class="flexRow logsmidiasTitleWrapper">
+          <svg class="logsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.5 30" xml:space="preserve">
+            <path fill="#8E9AAF" d="M19.7,0H2.8C1.3,0,0,1.3,0,2.8V30l11.3-6.6L22.5,30V2.8C22.5,1.3,21.2,0,19.7,0z M20.6,26.7l-9.4-5.5l-9.4,5.5V2.8c0-0.5,0.4-0.9,0.9-0.9h16.9c0.5,0,0.9,0.4,0.9,0.9V26.7z"/>
+          </svg>
+          <span class="logsmidiasTitle">Atualizações</span>
+          <div class="logsmidiasTitleBg"></div>
+        </div>
+        <div class="scrollbar" id="style-3-scrollbar">
+          <div class="force-overflow">
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Dolor sit amet, consectetur adipisicing elit. Beatae incidunt eos tempore expedita.</span>
+            </div>
+            <!-- fim log line -->
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Adipisicing elit. Beatae incidunt eos tempore expedita.</span>
+            </div>
+            <!-- fim log line -->
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Beatae incidunt eos tempore expedita.</span>
+            </div>
+            <!-- fim log line -->
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Consectetur adipisicing elit. Beatae incidunt eos tempore expedita.</span>
+            </div>
+            <!-- fim log line -->
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+            <!-- fim log line -->
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae incidunt eos tempore expedita.</span>
+            </div>
+            <!-- fim log line -->
+
+            <!-- line log -->
+            <div class="logLineWrapper">
+              <span class="logLineCleanText">Nome do Colaborador</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span class="logLineCleanText">12/12/20</span>
+              <span id="dotCircleSymbol">&#9679;</span>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae incidunt eos tempore expedita.</span>
+            </div>
+            <!-- fim log line -->
+
+          </div>
+        </div>
+      </div>
+<!-- fim logs ########################################-->
+
+
+
+    </div>
+
+
+
+<!-- modal selecione tipo de midia ########################################### -->
+
+<div class="modalTipomidiaWrapper">
+
+<button class="selecionarmidiaModalCloseBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#777">
+          <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
+        </svg>
+      </button>
+
+<span class="midiasTemplatesTitle">Selecione o tipo de mídia:</span>
+
+
+    <div class="midiasTemplatesWrapper">
+
+
+
+
+      <div class="midiaTemplateBlock hvr-grow">
+        <svg class="midiaModalMapaBrSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 117.8 112.7" xml:space="preserve">
+          <path fill="#eee2df" d="M111.8,28.1c-6.8-2.8-12.5-8.5-20.7-7.8c-1.9,0.1-3.3-1.6-4.8-2.6c-2.8-2-5.9-3.6-9.3-2.5c-4.4,1.4-5.7,0.4-4.2-3.9c-0.2-3.9-2-6.9-5-8.8c-2.9-1.9-5.8-0.7-8.4,1.1c-2.6,1.8-5.6,3-8.6,4.2c-2.7,0.5-5.5,1.1-5.3-3.4c0.1-2.1-1.3-3.9-3.6-4.1c-3.8-0.4-7.6-0.6-11.3,0.8c-2,0.7-3.7,2-3.5,4.3c0.5,6.1-2.4,5.3-6.4,3.6C14.8,6.6,10,10,10,16.5c0,1.3,0.3,2.6,0.6,3.9c0.7,3,0,4.9-3.5,5.8c-6.7,1.7-9.5,14-4.5,18.9c1.3,1.2,2.8,2.2,4.5,1.7c5.5-1.9,10.4,3.9,16,1.1c0.7-0.3,1.6,0.6,1.8,1.4c1.2,4.4,5.1,5.6,8.7,6.6c6.1,1.7,6.9,8.9,12.1,11.4c0.2,0.1,0.3,0.9,0.2,1.4c-1.2,7.7,3.5,13.3,7.2,19.1c2,3.2,2.1,5.4-0.3,8.4c-2,2.5-5,5.5-2.6,8.9c2.9,4.1,7.7,6,12.4,7.6c0.6,0.2,1.8-0.3,2.2-0.9c3.5-5.2,9-9.3,10.7-15.5c1.7-6.2,5.8-9.5,11.5-10.3c6-0.9,10.2-3.7,12.1-9.1c4.5-12.4,8.3-24.9,17-35.5C119.8,36.9,117.2,30.3,111.8,28.1z M112.5,41c-0.7,1.3-1.6,2.5-2.5,3.7c-4.9,6.1-9.5,12.2-10.2,20.6c-0.3,3.5-2.5,6.8-4,10.2c-1.6,3.5-4.4,5.5-8.4,6.1c-7.6,1.2-13,5.3-15.1,13.2c-1.3,4.8-5,8.5-8.4,11.6c-3,2.7-6.2-1.3-9.1-2.6c-2.3-1-0.7-3.2,0.3-4.7s2.1-3,3.2-4.5c1.6-2.1,1.6-4.2,0.1-6.5c-1.8-2.8-3.5-5.7-5.3-8.4c-2-3-3.1-6.1-3-9.8c0.1-3.8-0.4-7.4-4.8-8.9c-0.4-0.1-1.1-0.5-1.2-0.9c-0.9-6.9-7.1-7-11.7-9.2c-2.1-1-3.6-2.3-4.4-4.5c-1.3-2.3-3.4-3.1-6.5-2.7c-2.5,0.9-5.3,0.7-7.9-1.5c-1.2-1-2.8-0.6-4.3-0.4c-4.5,0.6-5.8-0.7-5.2-5.1c0.6-4.3,1.4-7.7,6.9-8.6c4.1-0.7,3.9-5.3,3.3-8.8c-0.4-2.5-1.8-4.9,0.6-6.9c2.1-1.8,4.4-0.5,6.6,0.2c5.5,1.9,9.1-0.7,9.5-6.7c0.3-3.9,3.6-2.7,5.7-3.2c1.8-0.5,4-0.7,4.6,2.3c1.1,5.5,3.5,7,9,6c3.6-0.7,7.1-1.7,10.4-3.5c1.8-1,3.6-3,5.8-1.2c2.1,1.7,2.7,4.1,2.2,6.8c-0.2,1.1-0.6,2.4-0.4,3.4c0.7,3.8,3.3,4.4,6.3,3.1c4.1-1.7,7.7-1.2,11.1,1.7c1,0.8,2.3,1.7,3.5,1.8c7.5,0.2,13.5,4.3,19.9,7.4C114.1,32.9,115.2,36.2,112.5,41z"/>
+        </svg>
+        <div class="arrowText">
+          <svg id="midiaTemplateBlockSvgArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 7" xml:space="preserve">
+            <path fill="#EEE2DF" d="M5.6,6.8L0.2,1.3c-0.2-0.2-0.2-0.6,0-0.8l0.3-0.3c0.2-0.2,0.6-0.2,0.8,0L6,5l4.7-4.8c0.2-0.2,0.6-0.2,0.8,0l0.3,0.3c0.2,0.2,0.2,0.6,0,0.8L6.4,6.8C6.2,7,5.8,7,5.6,6.8z"/>
+          </svg>
+          <span>Influencer</span>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="midiaTemplateBlock hvr-grow latam">
+        <svg class="midiaTemplateBlockSvg latamSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="0 0 356.4 399.4" xml:space="preserve">
+          <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M173.4,393.4L173.4,393.4L173.4,393.4z"/>
+          <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M173.4,398.4L173.4,398.4c1.4,0,2.5-1.1,2.5-2.5c0-1.4-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5C170.9,397.3,172,398.4,173.4,398.4L173.4,398.4z"/>
+          <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M178,396.9c-0.4,0-0.8-0.1-1.1-0.3l-7.1-3.5c-0.7-0.3-1.1-0.9-1.3-1.7c-0.2-0.7,0-1.5,0.4-2.1l0.8-1c0,0,0.3-13.6,0.3-13.6c0-0.5,0.2-0.9,0.4-1.3l0.1-0.2l-0.3-2.4l-0.6-2.4c-0.1-0.3-0.1-0.6,0-0.8l0.3-2.4l-0.7-6.8c0-0.1,0-0.1,0-0.2l-0.1-8.8c0-0.2,0-0.5,0.1-0.7l2.2-8.4l-0.5-9.6c0-0.5,0.1-0.9,0.3-1.3l5.9-11.3l1.7-11.7l8.7-47.2l-6-19.9l-22-15.3c-0.4-0.3-0.7-0.6-0.9-1.1l-4.1-9.7l-5.7-10.2l-14.7-20.1c-0.3-0.5-0.5-1-0.5-1.6l0.4-9.4c0-0.4,0.2-0.9,0.4-1.2l5.4-8.6L137,154c-0.3-0.8-0.1-1.7,0.4-2.4l8.3-10.2l0.8-3c0.2-0.7,0.7-1.4,1.5-1.7l3.2-1.3l0.4-5.6l1.2-11l-2.9-7.1l-9.5,0.8l-2.4,1.3l-2.2,1.3c-0.4,0.2-0.8,0.3-1.2,0.3c-0.2,0-0.4,0-0.6-0.1l-6.8-1.6c-0.6-0.1-1.1-0.5-1.4-1l-0.7-0.9h-0.9c-0.8,0-1.5-0.4-2-1l-2.9-3.8l-2.9-2.6c0,0-0.1-0.1-0.1-0.1l-5.1-5.1c-0.5-0.5-0.8-1.2-0.7-1.9c0-0.3,0.1-0.5,0.2-0.7l-5-4.7c-0.4-0.3-0.6-0.8-0.7-1.3l-0.5-2.2c0-0.1,0-0.1,0-0.2l0,0l-3.9,0.6c-0.1,0-0.2,0-0.4,0c-0.3,0-0.6-0.1-0.9-0.2c0,0-1.5-0.6-1.5-0.6l-17.9-8l-17.2-2.1c-0.4,0-0.7-0.2-1-0.4L33,59.6c-0.1-0.1-0.2-0.1-0.3-0.2L29,56.3c-0.3-0.2-0.5-0.5-0.6-0.8L17.5,33.6c-0.1-0.2-0.2-0.5-0.2-0.8l-1.1-8l-0.6-0.3L15,28.1l0.7,10.3c0,0.4,0,0.8-0.2,1.1l-2.2,5.3c-0.4,0.9-1.3,1.5-2.3,1.6c0,0,0,0,0,0c-1,0-1.9-0.6-2.3-1.5l-3-6.9c-0.1-0.3-0.2-0.5-0.2-0.8l-0.5-7.9l-1.2-0.6c-0.6-0.3-1.1-0.9-1.3-1.6c-0.2-0.7-0.1-1.4,0.3-2l0.5-0.8L4.6,4.8c0-0.7,0.4-1.4,1-1.9c0.4-0.3,0.9-0.5,1.5-0.5c0.2,0,0.4,0,0.6,0.1l14.2,3.7l11-2.3c0.2,0,0.3-0.1,0.5-0.1c0.4,0,0.8,0.1,1.1,0.3L44.2,9c0.4,0.2,0.8,0.5,1,0.9l2.1,3.4l3.1-2.4c0.5-0.3,1-0.5,1.5-0.5c0.7,0,1.4,0.3,1.9,0.9l8.7,10.5l4.3,4.3l4.6,3.3c0.5,0.4,0.9,1,1,1.7L76.8,60l15.8-7l6.5-6.2c0.4-0.4,1-0.7,1.6-0.7c0,0,11.1-0.3,11.2-0.3c0.9,0,1.7,0.5,2.2,1.3c0.5,0.8,0.4,1.8-0.1,2.6l-4.9,7.4l-2,7.9l-0.7,2.8c-0.1,0.4-0.3,0.7-0.5,1l-2.7,3.2l23.7,4.1c0.7,0.1,1.3,0.5,1.6,1.1c0.4,0.6,0.5,1.2,0.4,1.9L126,94.5l5.9,6.9l1.5,1.4l10-2c0.2,0,0.3,0,0.5,0c0.4,0,0.9,0.1,1.3,0.3l12,7.1l2.3-3.9l1.7-4.2c0.2-0.4,0.5-0.8,0.8-1.1l6.4-4.7c0.3-0.2,0.5-0.3,0.9-0.4l6.7-1.7l5-1.3c0.2-0.1,0.4-0.1,0.6-0.1c0,0,2.4,0.1,2.4,0.1l0.9-0.3l1-0.6c0.4-0.2,0.7-0.3,1.2-0.4l1.5-0.1l2-0.3c0.1,0,0.3,0,0.4,0c0.2,0,0.3,0,0.5,0l1.8,0.3l1.7,0.4c0.3,0.1,0.5,0.2,0.8,0.3l9.6,6l9.5-0.2c0,0,5.5-0.2,5.5-0.2c0.1,0,0.2,0,0.3,0l5.5,0.6c0.5,0.1,0.9,0.2,1.3,0.5l1.2,1c0,0,0.1,0.1,0.1,0.1l10,9c0,0,0.1,0.1,0.1,0.1l8.7,9c0.5-0.7,1.2-1,2-1c0.2,0,0.5,0,0.7,0.1l21,6c1.1,0.3,1.8,1.3,1.8,2.4l0.1,11l0,1.3l7.2-6.9c0.5-0.5,1.1-0.7,1.7-0.7c0.2,0,0.3,0,0.5,0c0.8,0.1,1.5,0.7,1.8,1.4l6.2,13l1.8,3.2c0.5,0.9,0.4,2-0.2,2.8l-4.8,6.1c0.3,0.3,0.6,0.6,0.7,1l3.8,0.3c1,0.1,1.8,0.7,2.2,1.6c0.1,0.3,0.2,0.7,0.2,1c0.4-0.3,0.9-0.4,1.4-0.4c0.2,0,0.4,0,0.5,0.1l2.2,0.5l1.4-0.5l6.4-2.1c0.3-0.1,0.5-0.1,0.8-0.1c0.5,0,1,0.2,1.5,0.5c0.4,0.3,0.7,0.7,0.9,1.2c0,0,0.7,0.7,0.7,0.7c0.2,0,0.3-0.1,0.5-0.1c0.2,0,0.3,0,0.5,0c1,0.2,1.8,0.9,2,1.9l0.3,1.2c0.5,0.1,0.9,0.4,1.2,0.8c0.4,0.5,0.6,1.2,0.5,1.9l-0.3,2.1l0.7,1.5c0.1,0.2,0.2,0.4,0.2,0.6l7.7-1.4c0.1,0,0.3,0,0.4,0c0.1,0,0.2,0,0.3,0l10.6,1.1c0.6,0.1,1.2,0.3,1.6,0.8l9.2,9.8l7.5,3.7c1.2,0.6,1.7,2,1.2,3.2L340,218.5c-0.2,0.5-0.6,0.9-1.1,1.2l-2.5,1.4l-9.3,31.6c-0.1,0.4-0.4,0.8-0.7,1.1L310,269.5c-0.2,0.2-0.5,0.4-0.8,0.5l-13.3,5.1l-11.1,6.3l-9.9,18.1l-2.3,4.4c-0.2,0.3-0.4,0.6-0.8,0.9l-6.2,4.5l-9.1,10.7c-0.5,0.6-1.2,0.9-1.9,0.9c-0.2,0-0.4,0-0.7-0.1l-14.6-4l2.2,14c0.2,1.2-0.6,2.4-1.8,2.8l-20.2,6l0.1,0.2c0.3,1.2-0.3,2.4-1.5,2.9l-9.4,4l2.2,3.3c0.5,0.7,0.6,1.7,0.2,2.5l-1.6,3.2c-0.2,0.4-0.6,0.8-1,1l-1.7,1l-1.4,1.1l-1.5,1.3l-0.8,2.8c-0.2,0.9-0.9,1.6-1.8,1.8l-2.3,0.6l-1,4.4l2.1,2.6c0.5,0.6,0.7,1.3,0.5,2c-0.1,0.7-0.6,1.4-1.2,1.7l-5.6,3.2l-3.7,2.4v7.6c0,0.9-0.5,1.8-1.3,2.2l-9.7,5.1C178.8,396.8,178.4,396.9,178,396.9z"/>
+          <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M7.1,5l14.7,3.9l11.6-2.5l9.6,4.8l3.5,5.8l5.3-4l8.8,10.6l4.5,4.6l4.7,3.4l4.9,32.1l19.2-8.5l6.9-6.5l11.1-0.3l-5.1,7.7l-2.1,8.3l-0.7,2.8l-5.4,6.6l27.9,4.8l-3.4,16.7l6.8,7.9l2.5,2.4l11.3-2.3l14.2,8.4l3.7-6.2l1.8-4.4l6.4-4.7l6.7-1.7l5-1.3l2.8,0.1l1.5-0.5l1.3-0.8l1.6-0.1l2.2-0.3l1.8,0.3l1.6,0.4l10.2,6.4l10.2-0.2l5.5-0.2l5.5,0.6l1.2,1l10,9l10.9,11.3l1.6-2.6l21,6l0.1,11l0.3,7l11.2-10.8l6.2,13.1l1.8,3.3l-8.4,10.6l1.9-0.9v1.3l2.1-1.4l0.2,1.4l5.7,0.4l-4.1,4.4l5.1-1l-1,3.5l3.9-4.8l2.9,0.6l2.1-0.8l6.3-2.1v2.3l0.6-1.3l2.3,2.3l0.6-1l0.6,2.9l1.3,0.1l-0.3,2.8l0.9,2.2l-0.3,2.7l10.9-1.9l10.6,1.1l9.5,10.1l7.9,3.9l-13.7,32.8l-3.4,1.9l-9.6,32.6l-16.5,15.7l-13.5,5.1l-11.9,6.8l-10.2,18.7l-2.3,4.5l-6.5,4.7l-9.3,11l-18.4-5l2.8,17.8l-22.5,6.6l0.6,2.6l-12.2,5.1l3.9,5.8l-1.6,3.2l-1.8,1.1l-1.5,1.3l-2.1,1.8l-1,3.6l-3.8,1l-1.7,7.1l2.9,3.5l-5.7,3.3l-4.9,3.2v9l-9.7,5.1l-1.9-1l-5.1-2.6l1.9-2.6h-0.6l0.3-13.5l0.6-1l-0.5-3.4l-0.6-2.5l0.3-2.6l-0.7-7.1l-0.1-8.8l2.3-8.8l-0.6-10l6.1-11.7l1.8-12.1l8.8-47.7l-6.4-21.3L160.9,222l-4.1-9.8l-5.8-10.5l-14.8-20.3l0.4-9.4l6.1-9.6l-3.2-9.3l8.7-10.6l1-3.5l4.6-1.9l0.5-7.1l1.3-11.6l-3.9-9.3l-11.9,1l-2.9,1.6l-2.3,1.3l-6.8-1.6l-1.1-1.5l-0.8-0.4h-1.6l-3-4l-3.1-2.8l-5.1-5.1l1.3-1l-6.9-6.4l-0.5-2.2l-0.3-2.6l-6.4,1l-1.4-0.6l-18.2-8.2L63,75.4L34.4,57.5l-3.7-3.1L19.7,32.5l-1.3-9.3L13.5,21l-1,7.1l0.8,10.6L11.1,44l-3-6.9l-0.6-9.3L5,26.4l0.9-1.3L7.1,5 M7.1,0c-1,0-2.1,0.3-2.9,0.9C3,1.8,2.2,3.2,2.1,4.7L1,23.5l-0.1,0.2c-0.8,1.2-1,2.7-0.6,4c0.4,1.4,1.3,2.5,2.5,3.1l0.4,6.5c0,0.6,0.2,1.1,0.4,1.6l3,6.9c0.8,1.8,2.6,3,4.6,3c0,0,0,0,0,0c2,0,3.8-1.2,4.6-3.1l2.2-5.3c0-0.1,0.1-0.2,0.1-0.2l8.2,16.4c0.3,0.6,0.7,1.2,1.3,1.6l3.7,3.1c0.2,0.1,0.4,0.3,0.5,0.4l28.6,17.9c0.6,0.4,1.3,0.6,2.1,0.7l16.8,2l17.5,7.8c0.1,0,0.1,0.1,0.2,0.1l1.4,0.6c0.6,0.2,1.2,0.4,1.9,0.4c0.2,0,0.5,0,0.7-0.1l1.6-0.2l0,0.2c0.2,1,0.7,1.9,1.5,2.6l4,3.8c0,1.3,0.5,2.6,1.5,3.5l5.1,5.1c0.1,0.1,0.1,0.1,0.2,0.2l2.7,2.4l2.7,3.6c0.9,1.1,2.2,1.9,3.6,2c0.7,0.9,1.7,1.5,2.8,1.8l6.8,1.6c0.4,0.1,0.8,0.1,1.2,0.1c0.9,0,1.7-0.2,2.5-0.7l2.2-1.3l1.9-1.1l7.2-0.6l2,4.8l-1.1,10.3c0,0.1,0,0.1,0,0.2l-0.3,4l-1.8,0.7c-1.4,0.6-2.5,1.8-2.9,3.3l-0.7,2.5l-8,9.8c-1.1,1.3-1.4,3.2-0.9,4.8l2.4,7.1l-4.8,7.6c-0.5,0.7-0.7,1.6-0.8,2.5l-0.4,9.4c0,1.1,0.3,2.2,1,3.1l14.6,20l5.5,10l4,9.6c0.4,0.9,1,1.6,1.8,2.2l21.3,14.8l5.5,18.4l-8.6,46.5c0,0.1,0,0.1,0,0.2l-1.6,11.3l-5.7,10.9c-0.4,0.8-0.6,1.7-0.6,2.6l0.5,9.2l-2.1,8.1c-0.1,0.4-0.2,0.9-0.2,1.4l0.1,8.8c0,0.1,0,0.3,0,0.4l0.7,6.6l-0.2,2.1c-0.1,0.6,0,1.1,0.1,1.7l0.5,2.3l0.2,1.4c-0.3,0.6-0.4,1.3-0.4,1.9l-0.3,12.8l-0.3,0.4c-0.9,1.2-1.2,2.7-0.9,4.1c0.3,1.4,1.3,2.7,2.6,3.3l5.1,2.6l1.9,1c0.7,0.4,1.5,0.5,2.2,0.5c0.8,0,1.6-0.2,2.4-0.6l9.7-5.1c1.6-0.9,2.6-2.6,2.6-4.4V383l2.5-1.6l5.6-3.2c1.3-0.7,2.2-2,2.4-3.4s-0.1-2.9-1-4.1l-1.3-1.6l0.4-1.7l0.8-0.2c1.8-0.4,3.2-1.8,3.6-3.6l0.5-2.1l0.9-0.8l1.2-1l1.5-0.9c0.8-0.5,1.5-1.2,1.9-2.1l1.6-3.2c0.8-1.6,0.7-3.5-0.3-5l-0.5-0.8l6.6-2.8c1.6-0.7,2.6-2,3-3.6l18.3-5.4c2.4-0.7,3.9-3.1,3.5-5.6l-1.6-10.1l10.9,3c0.4,0.1,0.9,0.2,1.3,0.2c1.5,0,2.9-0.6,3.8-1.8l8.9-10.5l6-4.3c0.6-0.5,1.2-1.1,1.5-1.8l2.3-4.4l9.5-17.4l10.3-5.9l13.2-5c0.6-0.2,1.2-0.6,1.7-1l16.5-15.7c0.6-0.6,1.1-1.4,1.4-2.2l9-30.7l1.6-0.9c1-0.5,1.7-1.4,2.1-2.4l13.7-32.8c1-2.4,0-5.2-2.4-6.4l-7.1-3.5l-8.9-9.5c-0.8-0.9-1.9-1.4-3.1-1.6l-10.6-1.1c-0.2,0-0.3,0-0.5,0c-0.3,0-0.6,0-0.9,0.1l-5.5,1l0.1-1.1c0.2-1.3-0.2-2.7-1-3.7c-0.3-0.4-0.6-0.7-1-0.9l0-0.1c-0.4-2-2-3.5-4-3.8c-0.1,0-0.2,0-0.3,0c-0.3-0.5-0.8-1-1.3-1.4c-0.9-0.6-1.9-0.9-2.9-0.9c-0.5,0-1.1,0.1-1.6,0.3l-6.3,2.1c-0.1,0-0.1,0-0.2,0.1l-0.7,0.3l-1.4-0.3c-0.3-0.1-0.6-0.1-0.9-0.1c-0.9-1.3-2.2-2.1-3.8-2.2l-0.5,0l2.5-3.2c1.3-1.6,1.4-3.8,0.4-5.5l-1.8-3.1l-6.1-13c-0.7-1.5-2-2.5-3.6-2.8c-0.3-0.1-0.6-0.1-0.9-0.1c-1.3,0-2.5,0.5-3.5,1.4l-3,2.9l0-6.5c0-2.2-1.5-4.2-3.6-4.8l-21-6c-0.5-0.1-0.9-0.2-1.4-0.2c-0.6,0-1.2,0.1-1.7,0.3l-7.3-7.5c-0.1-0.1-0.2-0.2-0.2-0.2l-10-9c-0.1-0.1-0.1-0.1-0.2-0.2l-1.2-1c-0.7-0.6-1.6-1-2.6-1.1l-5.5-0.6c-0.2,0-0.4,0-0.6,0c-0.1,0-0.1,0-0.2,0l-5.4,0.2l-8.7,0.2l-9-5.6c-0.5-0.3-1-0.5-1.5-0.6l-1.6-0.4c-0.1,0-0.1,0-0.2,0l-1.8-0.3c-0.3-0.1-0.6-0.1-0.9-0.1c-0.3,0-0.5,0-0.8,0.1l-1.9,0.3l-1.4,0.1c-0.8,0-1.6,0.3-2.3,0.7l-0.8,0.5l-0.2,0.1l-1.8-0.1c-0.1,0-0.1,0-0.2,0c-0.4,0-0.8,0.1-1.2,0.2l-5,1.3l-6.7,1.7c-0.6,0.2-1.2,0.4-1.7,0.8l-6.4,4.7c-0.7,0.5-1.3,1.3-1.7,2.1l-1.7,4l-1,1.6l-9.8-5.8c-0.8-0.5-1.7-0.7-2.5-0.7c-0.3,0-0.7,0-1,0.1l-8.7,1.7l-0.4-0.4l-5.1-5.9l2.9-14.3c0.3-1.3,0-2.7-0.8-3.8c-0.8-1.1-1.9-1.9-3.3-2.1L108,70.2c0.4-0.6,0.8-1.2,0.9-1.9l0.7-2.8l1.9-7.4l4.7-7c1-1.6,1.1-3.6,0.2-5.2c-0.9-1.6-2.6-2.6-4.4-2.6c0,0-0.1,0-0.1,0l-11.1,0.3c-1.2,0-2.4,0.5-3.3,1.4l-6.2,5.9l-12.5,5.5l-3.9-25.6c-0.2-1.3-0.9-2.5-2-3.3l-4.4-3.1l-4.1-4.1L55.7,9.8c-1-1.2-2.4-1.8-3.8-1.8c-1.1,0-2.1,0.3-3,1L48,9.7l-0.6-1c-0.5-0.8-1.2-1.4-2-1.9L35.7,2c-0.7-0.4-1.5-0.5-2.3-0.5c-0.3,0-0.7,0-1,0.1L22,3.8L8.4,0.2C8,0.1,7.6,0,7.1,0L7.1,0z"/>
+          <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M151.5,57.2c-0.4,0-0.7-0.1-1.1-0.2l-19.3-9.2l-3.1,0.5l-6,1.7c-0.2,0.1-0.4,0.1-0.7,0.1h-1.8c-0.7,0-1.4-0.3-1.9-0.9l-1.5-1.8c-0.6-0.7-0.7-1.6-0.5-2.4c0.3-0.8,0.9-1.4,1.8-1.7l21.8-5.4c0.2,0,0.4-0.1,0.6-0.1c0.3,0,0.6,0.1,0.9,0.2l21.3,8.6c0.1,0,0.1,0.1,0.2,0.1l7.4,3.9c1,0.5,1.5,1.6,1.3,2.7c-0.2,1.1-1.1,1.9-2.2,2l-17,1.9C151.7,57.2,151.6,57.2,151.5,57.2z"/>
+          <path fill="none" stroke="#EEE2DF" stroke-width="9" stroke-linejoin="round" stroke-miterlimit="10" d="M139.9,40.3l21.3,8.6l7.4,3.9l-17,1.9h0l-20-9.6l-4,0.7l-6.1,1.7h-1.8l-1.5-1.8L139.9,40.3 M139.9,35.3c-0.4,0-0.8,0-1.2,0.1l-21.8,5.4c-1.7,0.4-3,1.7-3.6,3.3c-0.5,1.6-0.2,3.4,0.9,4.8l1.5,1.8c1,1.1,2.3,1.8,3.8,1.8h1.8c0.5,0,0.9-0.1,1.3-0.2l5.9-1.6l2.2-0.4l18.6,8.9c0.7,0.3,1.4,0.5,2.2,0.5c0.2,0,0.4,0,0.6,0l17-1.9c2.2-0.2,4-1.9,4.4-4.1c0.4-2.2-0.7-4.3-2.6-5.3l-7.4-3.9c-0.1-0.1-0.3-0.1-0.4-0.2l-21.3-8.6C141.2,35.4,140.5,35.3,139.9,35.3L139.9,35.3z"/>
+        </svg>
+        <div class="arrowText">
+          <svg id="midiaTemplateBlockSvgArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 7" xml:space="preserve">
+            <path fill="#EEE2DF" d="M5.6,6.8L0.2,1.3c-0.2-0.2-0.2-0.6,0-0.8l0.3-0.3c0.2-0.2,0.6-0.2,0.8,0L6,5l4.7-4.8c0.2-0.2,0.6-0.2,0.8,0l0.3,0.3c0.2,0.2,0.2,0.6,0,0.8L6.4,6.8C6.2,7,5.8,7,5.6,6.8z"/>
+          </svg>
+          <span>Latam</span>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="midiaTemplateBlock hvr-grow coInt">
+        <svg class="midiaPersoSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64.7 57.6" xml:space="preserve">
+          <path fill="none" stroke="#eee2df" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1.3,42.6V4.3c0-1.6,1.4-3,3-3h14.6l4.7,6.5H51"></path>
+          <polyline fill="none" stroke="#eee2df" stroke-width="2.5" stroke-linejoin="round" stroke-miterlimit="10" points="31.4,42.6 1.3,42.6 12.8,15.7 61.7,15.7 57.3,26.1"></polyline>
+          <line fill="none" stroke="#eee2df" stroke-width="2.5" stroke-miterlimit="10" x1="56.4" y1="42.6" x2="43.3" y2="42.6"></line>
+          <line fill="none" stroke="#eee2df" stroke-width="2.5" stroke-miterlimit="10" x1="49.8" y1="49.1" x2="49.8" y2="36"></line>
+          <circle fill="none" stroke="#eee2df" stroke-width="2.5" stroke-linejoin="round" stroke-miterlimit="10" cx="49.7" cy="42.6" r="13.7"></circle>
+        </svg>
+        <div class="arrowText">
+          <svg id="midiaTemplateBlockSvgArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 7" xml:space="preserve">
+            <path fill="#EEE2DF" d="M5.6,6.8L0.2,1.3c-0.2-0.2-0.2-0.6,0-0.8l0.3-0.3c0.2-0.2,0.6-0.2,0.8,0L6,5l4.7-4.8c0.2-0.2,0.6-0.2,0.8,0l0.3,0.3c0.2,0.2,0.2,0.6,0,0.8L6.4,6.8C6.2,7,5.8,7,5.6,6.8z"/>
+          </svg>
+          <span>Personalizada</span>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+<!-- final modal selecione tipo de midia ############################################-->
+
+
+
+<script src="js/gerenciadorMidias.js"></script>
+
+
+  </body>
+</html>
